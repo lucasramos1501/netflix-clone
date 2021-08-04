@@ -1,0 +1,143 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+    --gray: #AAAAAA;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: var(--white);
+    
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(14,14,14,.50) 0%, rgba(14,14,14,0) 100%);
+    z-index: 20;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+
+.menu, .secundary-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}   
+
+header .logo {
+    color: var(--red);
+    font-family: 'Arial Black', Times;
+    font-size: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+header nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+header nav a:hover {
+    color: var(--white);
+}
+
+header .box-perfil {
+    cursor: pointer;
+}
+
+header .secundary-navigation i {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+header .box-perfil img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+main {
+    background-color: var(--black);
+}
+
+.banner-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("https://www.themoviedb.org/t/p/original/yMxKoqSA30c2gNxWshUb9KqhMEf.jpg");
+    background-size: cover;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.banner-main .title {
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.banner-main .description {
+    margin-bottom: 40px;
+}
+
+.banner-main .btn {
+    background-color: rgba(0, 0, 0, .5);
+    color: var(--white);
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;    
+    cursor: pointer;
+    padding: 15px 30px;
+    margin-right: 15px;
+}
+
+.banner-main .btn:hover{
+    background-color: var(--white);
+    color: rgba(0, 0, 0, .5);
+    transition: 500ms ease-in-out all;
+}
+
+.banner-main .btn i {
+    margin-right: 5px;
+}
+
+.title-list {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+}
+
+.list {
+    padding-left: 40px;
+}
+
+.my-list {
+    position: relative;
+    top: -40px;
+}
+
+.box-movie {
+    display: block;
+    cursor: pointer;
+}
+
+.box-movie img {
+    border-radius: 2px;
+}

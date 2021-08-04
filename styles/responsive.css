@@ -1,0 +1,37 @@
+@media screen and (max-width: 700px){
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    header .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .secundary-navigation {
+        display: none;
+    }
+
+    .btn{
+        margin-top: 5px;
+        width: 190px;
+        height: 50px;
+    }
+
+    .list-title{
+        margin-top: 80px;
+    }
+
+    .list{
+        padding-left: 10px;
+    }
+
+ 
+
+}
+
+@media screen and (min-width: 1000px){
+     .banner-main .description{
+         width: 50%;
+     }
+}
