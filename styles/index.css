@@ -141,3 +141,53 @@ main {
 .box-movie img {
     border-radius: 2px;
 }
+
+footer {
+    background-color: var(--black);
+    padding-top: 60px;
+    padding-left: 110px;
+    min-height: 300px;
+}
+
+footer i {
+    font-size: 35px;
+    opacity: 0.4;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+footer .options{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+footer .options a{
+    display: block;
+    padding: 10px;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--white);
+    opacity: 0.4;
+}
+
+footer .others {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    color: var(--white);
+    opacity: 0.4;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+footer .others .btn {
+    width: 15%;
+    margin-bottom: 15px;
+    background-color: var(--black);
+    border: solid var(--gray) 1px;
+    color: var(--white);
+    padding: 3px;
+}
