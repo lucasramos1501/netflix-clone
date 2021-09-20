@@ -155,8 +155,13 @@ main {
 }
 
 .box-movie-describle {
+    display: none;
     background-color: var(--black);
     padding: 1% 5%;
+}
+
+.show {
+    display: block;
 }
 
 .box-movie-describle .serie-options i {
@@ -173,9 +178,6 @@ main {
     transition: 1s ease-in;
 }
 
-.show{
-    display: block;
-}
 footer {
     background-color: var(--black);
     padding-top: 60px;
