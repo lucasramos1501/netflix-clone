@@ -22,7 +22,6 @@ var boxMovie = document.querySelectorAll(".box-movie");
 boxMovie.forEach((serie) => {
     serie.addEventListener("click", () => {
         serie.children[1].classList.toggle("show");
-        console.log(serie.children[1]);
     });
 })
 
@@ -66,7 +65,6 @@ setTimeout(dinamicBanner, 3000);
 
 function playTrailer() {
     var iconsOfPlay = document.querySelectorAll(".fa-play");
-    console.log(iconsOfPlay);
 
     iconsOfPlay.forEach((icon) => {
         icon.addEventListener("click", () => {
@@ -110,9 +108,47 @@ function playTrailer() {
 }
 playTrailer();
 
-
-
 //Plus
-//Like
-//Deskile
+var iconsOfPlus = document.querySelectorAll(".fa-plus");
+var iconsOfCheck = document.querySelectorAll(".fa-check");
+
+function changeIcon(icon){
+    var typeOfIcon = icon.classList[1];
+    if(typeOfIcon == "fa-plus"){
+        icon.classList.remove("fa-plus");
+        icon.classList.add("fa-check");
+    }else{
+        icon.classList.remove("fa-check");
+        icon.classList.add("fa-plus");
+    }
+}
+
+iconsOfPlus.forEach((plus) => {
+    plus.addEventListener("click", ()=>{changeIcon(plus)})
+});
+
+iconsOfCheck.forEach((check) => {
+    check.addEventListener("click", ()=>{changeIcon(check)})
+});
+
+//Like and Deslike
+    var iconsOfLike = document.querySelectorAll(".fa-thumbs-up");
+    var iconsOfDeslike = document.querySelectorAll(".fa-thumbs-down");
+
+    function changeOption(likeOrDelike){
+        var valueOfOpacity = likeOrDelike.style.opacity;
+        if(valueOfOpacity == 1){
+            likeOrDelike.style.opacity = 0.7
+        }else{
+            likeOrDelike.style.opacity = 1;
+        }
+    }
+    
+    iconsOfLike.forEach((like) => {
+        like.addEventListener("click", ()=>{changeOption(like)})
+    });
+
+    iconsOfDeslike.forEach((deslike) => {
+        deslike.addEventListener("click", ()=>{changeOption(deslike)})
+    });
 //Options
